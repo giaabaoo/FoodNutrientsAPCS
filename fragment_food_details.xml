@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Food_Details_Fragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="FOOD's NAME: aaaaaaaaaaaa"
+            android:gravity="center" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:text="Serving Size (g)"/>
+        <EditText
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:text="100"
+            android:gravity="right"/>
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:text="Calculate"
+                android:textSize="10dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="15dp"
+                android:text="KCAL"
+                android:id="@+id/kcalid"/>
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="50dp"
+                android:text="Carbs: "
+                android:id="@+id/carbsid"/>
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="50dp"
+                android:text="Fat: "
+                android:id="@+id/fatid"/>
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="50dp"
+                android:text="Protein: "
+                android:id="@+id/proteinid"/>
+
+        </LinearLayout>
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:text="REturn"
+            android:onClick="returnmain"/>
+    </LinearLayout>
+</FrameLayout>
